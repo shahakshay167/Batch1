@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 1.Default function
+        function greeting(){
+            return "good evening friends";
+        }
+        document.write(greeting(),"<br>");
+
+        // 2.parameterized function
+        function welcome(s1,s2,s3){
+            return`welcome you ${s1},${s2},${s3}`;
+        }
+        document.write(welcome("akshay","vivek","rohan"),"<br>");
+
+        // 3.Anonymous function: function which has no name.
+        let add =  function(no1,no2){
+            return no1+no2
+        }
+        document.write(add(20,30),"<br>");
+
+        // 4.Arrow function: function which has no name and no function keyword.
+        let sub = (no1,no2) => {
+            return no1-no2
+        }
+        document.write(sub(20,30),"<br>");
+
+        // 5.Optional Parameterized function: in this function we can keep parameter value option, means no need to pass parameter value.
+         let fullName = (fname, lname, mname ='') =>{
+            return fname+mname+lname;
+         }
+         document.write(fullName("akshay","kanade"),"<br>"); 
+         document.write(fullName("akshay","kanade","R"),"<br>"); 
+
+        //  6.Rest parameterized function: when we dont know how many parameters are required in that case we use it, in this we use spread(...)operator.
+        let stdlist = (...std) =>{
+            return std;
+        }
+        document.write(stdlist("Akshay","Rohan","VivekDon","ViashnaviVaihni"),"<br>"); 
+    </script>
+</body>
+</html>
