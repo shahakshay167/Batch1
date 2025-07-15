@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let name = "Akshay Rajabhau Kanade student of Jspm";
+        // String Methods
+        console.log(name.length);
+        console.log(name.indexOf("of"));
+        console.log(name.lastIndexOf("Kanade"));
+        console.log(name.search("Kanade"));
+        console.log(name.slice(0,5));
+        console.log(name.substring(0,4));
+        console.log(name.slice(0,6));
+        console.log(name.substr(0,8));
+        console.log(name.charAt(11));
+        console.log(name.replace("Jspm","Hematite"));
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+        console.log(name.split());
+
+        var company1 = "excel ";
+        var company2 = "microsoft";
+        var company = company1.concat(company2);
+        console.log(company);
+
+
+        let arr = [
+            {
+                id:1,
+                name:"Ram",
+                Post:"Developer",
+                Age:36,
+                Gender:"Male",
+                Address:"Pune"
+            },
+            {
+                id:2,
+                name:"Lakhan",
+                Post:"Developer Js",
+                Age:46,
+                Gender:"Male",
+                Address:"Mumbai"
+            },
+            {
+                id:3,
+                name:"Princess",
+                Post:"web developer",
+                Age:56,
+                Gender:"Female",
+                Address:"Nagpur"
+            },
+            {
+                id:4,
+                name:"Yamuna",
+                Post:"Hr",
+                Age:63,
+                Gender:"Female",
+                Address:"Dhule"
+            },
+            {
+                id:5,
+                name:"Rajesh",
+                Post:"Post Developer",
+                Age:42,
+                Gender:"Male",
+                Address:"Satara"
+            },
+            {
+                id:6,
+                name:"Balram",
+                Post:"Hr",
+                Age:47,
+                Gender:"Male",
+                Address:"Mumbai"
+            }
+        ]
+    for(i=0;i<arr.length;i++){
+        console.log(arr[i].Gender+" "+arr[i].name+" "+arr[i].Post+" "+arr[i].id+" "+arr[i].Post+" "+arr[i].Address+" ");
+    }
+    for(i=0;i<arr.length;i++){
+        if(arr[i].Gender=="Female")
+        {
+        console.log(arr[i].Gender+" "+arr[i].name+" "+arr[i].Post+" "+arr[i].id+" "+arr[i].Post+" "+arr[i].Address+" ");
+    }
+    }
+    for(i=0;i<arr.length;i++){
+        if(arr[i].Post=="Hr")
+        {
+        console.log(arr[i].Gender+" "+arr[i].name+" "+arr[i].Post+" "+arr[i].id+" "+arr[i].Post+" "+arr[i].Address+" ");
+    }
+    }
+    for(i=0;i<arr.length;i++){
+        if(arr[i].Age>45 && arr[i].Age<60);
+        {
+        console.log(arr[i].Gender+" "+arr[i].name+" "+arr[i].Post+" "+arr[i].id+" "+arr[i].Post+" "+arr[i].Address+" ");
+    }
+    }
+    </script>
+</body>
+</html>
