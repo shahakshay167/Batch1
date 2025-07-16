@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>**Java Arrays**</b>
+    <script>
+        
+        const fruits = ['apple','mango','banana'];
+        // 1.forEach
+        fruits.forEach((item)=>{
+            console.log(item);
+        })
+       // 2.map
+        fruits.map((item)=>{
+            console.log(item);
+        })
+        //3.filter
+        const age =[40,20,30,50,60];
+        age.filter((item)=>{
+             return total=item>50;
+        })
+        console.log(total);
+        //4.every()method:The every() method returns true if the function returns true for all elements. 
+        age.every((item)=>{
+           total=item>20;
+           return total;
+        })
+        console.log(total);
+        //5.some()method:
+        age.some((item)=>{
+             Total=item>50;
+             return Total;
+        })
+        console.log(Total);
+        //6.reduce
+        age.reduce((prev,next)=>{
+            Total=prev+next;
+            return Total;
+        })
+        console.log(Total);
+    </script>
+</body>
+</html>
