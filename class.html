@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uses of Classes</title>
+</head>
+<body>
+    
+
+    <!-- <script>
+        // Class Method and constructor
+        class greeting{
+            constructor(str){
+                this.str = str;
+                document.writeln("Hii friends<br>");
+            }
+            
+            greet(){
+                document.writeln(this.str);
+            }
+        }
+        class show extends greeting(){
+            (str1);
+        }
+        let a = prompt("Enter the value");
+        let obj = new greeting(a);
+        obj.greet();
+        obj.greet1();
+
+    </script> -->
+
+    <form>
+        <div>
+            <label>Val1</label>
+            <input type="text" name="val1" id="val1">
+        </div>
+        <div>
+            <label>Val2</label>
+            <input type="text" name="val2" id="val2">
+        </div>
+        <div>
+            <select name="operator" id="optr">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+
+            </select>
+            
+            <button type="button" onclick="calculate()">Calculate</button>
+        </div><br>
+        <div>
+            
+        </div>
+        Result:<b id="ans"></b>
+    </form>
+</body>
+<script src="./cal.js"></script>
+</html>
