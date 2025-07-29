@@ -1,11 +1,15 @@
 import Akshay from './components/Demo11';
 import logo from './logo.svg';
-function App() {
-  return (
-    <div className="App">
-    <Akshay Name='Akshay'/>
-    </div>
-  );
+import MyDetailcomp from './Task/Function'
+// function App() {
+//   return (
+//     <div className="App">
+//     <Akshay Name='Akshay'/>
+//     </div>
+//   )};
+function MyDetailcomp(){
+  return(
+      <MyDetailcomp name="akshay" address="Pune"/>
+  )
 }
-
-export default App;
+export default MyDetailcomp;

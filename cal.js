@@ -15,6 +15,9 @@ class calculator{
     Division(){
     return this.a/this.b
 ;    }
+    Modulus(){
+    return this.a%this.b
+;    }
 }
 
 function calculate(){
@@ -39,6 +42,10 @@ switch (choice) {
     }
     case'/':{
         document.getElementById("ans").innerHTML = obj.Division();
+        break;
+    }
+    case'%':{
+        document.getElementById("ans").innerHTML = obj.Modulus();
         break;
     }
 }

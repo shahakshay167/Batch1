@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Object
+        const person = {
+            name:"Ram",
+            age:30,
+            city:"pune"
+        }
+        const{name,age,city} = person;
+        console.log(name);
+        // Array
+        const color =["red","green","blue"];
+        const[first,second,third]=color;
+        console.log(first);
+        // Function
+        function Display({name,age}){
+            console.log(`${name} is ${age} yrs old`);
+        }
+        const student = {name:"Raja",age:20};
+        Display(student);
+        // swapping Number
+        let x=1,y=2;
+        [x,y]=[y,x];
+        console.log(x,y);
+        </script>
+</body>
+</html>

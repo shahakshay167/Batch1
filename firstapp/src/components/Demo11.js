@@ -25,7 +25,7 @@ function Akshay(props) {
           imgobj.map((item,index)=>(
               <img key={index} className='img' src={item.imgpath} alt={item.imgName}/>
           ))
-          }
+        }
     </div>
   );
 }
